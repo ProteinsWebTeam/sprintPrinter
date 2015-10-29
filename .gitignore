@@ -1,0 +1,9 @@
+db.sqlite3
+__pycache__
+.idea
+unifam/mysql.conf
+*.pyc
+.DS_Store
+unifam/settings-private.py
+venv/
+.coverage
