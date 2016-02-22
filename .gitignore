@@ -7,3 +7,5 @@ unifam/mysql.conf
 unifam/settings-private.py
 venv/
 .coverage
+output
+
