@@ -2,7 +2,7 @@
 A short script to create a PDF file to print the user stories from jira.
 The idea is that each Sprint master, can improve the script in the time between sprints.
 
-Install
+Install using Virtual env
 ----
 Execute the next commands, editing the path for python 3
 ```
@@ -10,6 +10,17 @@ git clone https://github.com/ProteinsWebTeam/sprintPrinter.git
 cd sprintPrinter
 virtualenv --python=/usr/bin/python venv
 venv/bin/pip install -r requirements.txt
+```
+Install using Conda
+----
+Execute the next commands, editing the path for python 3
+```
+git clone https://github.com/ProteinsWebTeam/sprintPrinter.git
+cd sprintPrinter
+conda create --name sprintprinter python=3.3.1 reportlab=3.2.0
+source activate sprintprinter
+#Test run
+python3 sprint-pdf.py -i sprint_76.tsv -o test.pdf
 ```
 
 Usage
